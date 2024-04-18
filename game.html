@@ -12,14 +12,37 @@
     <section>
 
         <div class="parent">
-            <!-- <h1>Guess your number and win</h1> -->
 
-            <div class="inp">
-                <input id="inp1" type="text">
+            <div class="guess">
+                <h1>Guess your number right & win!(1-9)</h1>
             </div>
 
+            <div class="inp">
+
+                <div class="sel">
+
+                    <!-- <input  id="input" oninput="doSmth(event)" /> -->
+
+                    <select id="input2" onchange="choose(event)">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+
+                </div>
+            </div>
+
+
+
             <div class="btn">
-                <button onclick="game()">Check</button>
+                <button class="btt" onclick="choosen()">PLAY</button>
             </div>
 
             <div class="htag">
